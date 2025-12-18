@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi người thương giáng sinh này ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="snow-container"></div>
+    
+    <div class="music-control">
+        <button id="playMusic">🎵 Bật nhạc</button>
+    </div>
+
+    <div class="container">
+        <!-- Màn hình chờ: Hộp quà -->
+        <div class="gift-box-container" id="giftBox">
+            <div class="gift-box">
+                <div class="lid">
+                    <div class="ribbon-h"></div>
+                    <div class="ribbon-v"></div>
+                </div>
+                <div class="box">
+                    <div class="ribbon-h"></div>
+                    <div class="ribbon-v"></div>
+                </div>
+            </div>
+            <p class="click-me">Nhấn vào hộp quà đi nè! 🎁</p>
+        </div>
+
+        <!-- Màn hình nội dung: Lời chúc/Tỏ tình -->
+        <div class="card hidden" id="card">
+            <div class="card-content">
+                <h1>Merry Christmas! 🎄</h1>
+                <div class="message" id="message"></div>
+                <div class="heart">❤️</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- File nhạc (Cần thay thế đường dẫn file nhạc của bạn vào đây) -->
+    <!-- Ví dụ: assets/music.mp3 -->
+    <audio id="bgMusic" loop>
+        <source src="" type="audio/mp3">
+        Trình duyệt của bạn không hỗ trợ phát nhạc.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
