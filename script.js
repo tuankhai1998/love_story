@@ -97,22 +97,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.innerWidth > 768) {
             const zones = [
                 // Top Center (Above Card)
-                { left: [35, 65], top: [2, 12] },
+                { left: [35, 37], top: [7, 12] },
                 
                 // Bottom Center (Below Card)
-                { left: [35, 65], top: [88, 95] },
+                { left: [30, 35], top: [70, 79] },
 
                 // Left Column
-                { left: [2, 18], top: [5, 25] },
-                { left: [2, 18], top: [30, 50] },
-                { left: [2, 18], top: [55, 75] },
-                { left: [2, 18], top: [80, 95] },
+                { left: [10, 18], top: [5, 20] },
+                { left: [18, 24], top: [30, 48] },
+                { left: [5, 10], top: [50, 73] },
+                { left: [26, 30], top: [65, 80] },
 
                 // Right Column
-                { left: [82, 98], top: [5, 25] },
-                { left: [82, 98], top: [30, 50] },
-                { left: [82, 98], top: [55, 75] },
-                { left: [82, 98], top: [80, 95] }
+                { left: [70, 68], top: [5, 25] },
+                { left: [77, 68], top: [30, 50] },
+                { left: [65, 98], top: [55, 75] },
+                { left: [82, 58], top: [60, 969] }
             ];
 
             const shuffledZones = zones.sort(() => 0.5 - Math.random());
