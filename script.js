@@ -90,6 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 finalMusic.play().catch(() => { });
             }
 
+            if (k === 3) {
+                transformSnowToHearts();
+            }
+
             await typeText(msgs[k]);
 
             if (k < msgs.length - 1) {
@@ -266,7 +270,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Nút "Thêm thời gian" né tránh
-    btnNo.addEventListener('mouseover', () => {
+    const moveButton = (e) => {
+        // Prevent default touch behavior if it's a touch event to stop scrolling/clicking
+        if(e.type === 'touchstart') e.preventDefault();
+        
         hoverNoCount++; // Tăng biến đếm
         
         // Random vị trí mới
@@ -287,7 +294,10 @@ document.addEventListener('DOMContentLoaded', () => {
             btnNo.style.opacity = '1';
             btnNo.style.transform = 'scale(1)';
         }, 3000);
-    });
+    };
+
+    btnNo.addEventListener('mouseover', moveButton);
+    btnNo.addEventListener('touchstart', moveButton);
 
     // Nút "Đồng ý"
     btnYes.addEventListener('click', () => {
